@@ -9,7 +9,7 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: {
-      index: './src/index.js',
+      main: './src/index.js',
       articles: './src/articles.js',
     },
     output: {
@@ -17,10 +17,13 @@ module.exports = {
         filename: '[name].[chunkhash].js'
     },
     module: {
-        rules: [{
+        rules: [
+          {
             test: /\.js$/,
             exclude: /node_modules/,
+            use:{
             loader: 'babel-loader',
+            }
         },
         {
             test: /\.(png|jpg|gif|ico|svg)$/,
@@ -63,13 +66,13 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
           inject: false,
-          template: './src/index.html',
+          template: './src/pages/index.html',
           filename: 'index.html',
           chunks: ['main']
       }),
       new HtmlWebpackPlugin({
           inject: false,
-          template: './src/articles.html',
+          template: './src/pages/articles.html',
           filename: 'articles.html',
           chunks: ['articles']
       }),

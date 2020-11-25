@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsExplorer</title>
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
-    <link rel="icon" type="image/svg+xml" href="<%=require('./images/favicon.svg')%>">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
+    <link rel="icon" href="<%=require('../images/favicon.svg')%>" type="image/svg+xml">
 </head>
 <body>
     <div class="root">
-      <header class="header">
+      <header class=" header header_theme_light link link_theme_light">
         <a href="index.html" class="header__logo-link">NewsExplorer</a>
         <nav class="header__nav nav">
           <ul class="nav__list">
@@ -42,7 +42,7 @@
               <div class="article__icon article__icon_unmarked"></div>
               <picture>
                 <img
-                  src="<%=require('./images/article.jpg')%>"
+                  src="<%=require('../images/article.jpg')%>"
                   alt="Фото новости"
                   class="article__image">
               </picture>
@@ -60,7 +60,7 @@
               <div class="article__icon article__icon_unmarked"></div>
               <picture>
                 <img
-                  src="<%=require('./images/article.jpg')%>"
+                  src="<%=require('../images/article.jpg')%>"
                   alt="Фото новости"
                   class="article__image">
               </picture>
@@ -78,7 +78,7 @@
               <div class="article__icon article__icon_type_unmarked"></div>
               <picture>
                 <img
-                  src="<%=require('./images/article.jpg')%>"
+                  src="<%=require('../images/article.jpg')%>"
                   alt="Фото новости"
                   class="article__image">
               </picture>
@@ -96,7 +96,7 @@
         </section>
         <section class="main__author author">
           <picture class="author__image-wraper">
-            <img alt="author-image" class="author__image" src="<%=require('./images/image-03.jpg')%>">
+            <img alt="author-image" class="author__image" src="<%=require('../images/image-03.jpg')%>">
           </picture>
         <div class="author__content">
             <h3 class="author__title">Об авторе</h3>
@@ -115,8 +115,8 @@
                 <a class="nav__link link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
             </ul>
             <div class="footer__social">
-                <img class="footer__social-icon" src="<%=require('./images/github.svg')%>" alt=" github icon ">
-                <img class="footer__social-icon" src="<%=require('./images/fb.svg')%>" alt="facebook icon ">
+                <img class="footer__social-icon" src="<%=require('../images/github.svg')%>" alt=" github icon ">
+                <img class="footer__social-icon" src="<%=require('../images/fb.svg')%>" alt="facebook icon ">
             </div>
         </nav>
       </footer>
