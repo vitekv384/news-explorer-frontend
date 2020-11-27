@@ -1,0 +1,6 @@
+@import url(../__link/_active/nav__link_active.css);
+
+.nav__link{
+  vertical-align: middle;
+  padding-bottom: 26px;
+}

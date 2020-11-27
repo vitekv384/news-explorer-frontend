@@ -1,4 +1,4 @@
-@import url(../header/__logo-link/header__logo-link.css);
+@import url(../header/__logo/header__logo.css);
 @import url(../header/__nav/header__nav.css);
 @import url(../header/_theme_light/header_theme_light.css);
 
@@ -8,5 +8,8 @@
   min-height: 80px ;
   align-items: center;
   color:#fff;
+  padding: 0 104px 0;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+
 }
 
