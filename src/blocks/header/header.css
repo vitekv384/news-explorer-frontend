@@ -1,6 +1,6 @@
 @import url(../header/__logo/header__logo.css);
 @import url(../header/__nav/header__nav.css);
-@import url(../header/_theme_light/header_theme_light.css);
+@import url(../header/_theme/header_theme_light.css);
 
 .header{
   display: flex;
