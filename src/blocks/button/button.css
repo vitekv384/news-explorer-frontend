@@ -10,3 +10,6 @@ font-size: 18px;
 line-height: 24px;
 font-style: normal;
 }
+.button:focus{
+  outline: none;
+}

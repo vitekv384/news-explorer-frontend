@@ -1,0 +1,5 @@
+.main__author{
+  display: flex;
+  padding: 80px 104px;
+  align-self: flex-start;
+}

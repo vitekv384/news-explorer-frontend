@@ -1,0 +1,12 @@
+.articles__button{
+  width: 288px;
+  height: 64px;
+  background: #FFFFFF;
+  border-radius: 80px;
+  align-self: center;
+  margin-top: 64px;
+  border: 0;
+}
+.articles__button:hover{
+  opacity: 0.9;
+}
