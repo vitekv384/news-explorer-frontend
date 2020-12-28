@@ -1,0 +1,15 @@
+.article__icon_type_unmarked{
+  background-image: url(../../../../images/flag.svg);
+}
+
+.article__icon_type_unmarked:hover{
+  background-image: url(../../../../images/flag_hover.svg);
+}
+
+.article__icon_type_unmarked:hover ~ .article__unauth_massage {
+  
+  background-color: #fff;
+  color: #000;
+  transition: 1s;
+  /* display: flex; */
+}
