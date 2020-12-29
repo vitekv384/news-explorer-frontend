@@ -1,0 +1,6 @@
+.footer__social{
+  display: flex;
+  min-width: 72px;
+  justify-content: space-between;
+  margin-left: 40px;
+}

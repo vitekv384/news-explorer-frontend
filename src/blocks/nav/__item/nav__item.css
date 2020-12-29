@@ -1,6 +1,6 @@
-.nav__item{
-  margin: auto 32px auto 0
-}
+@import url(../__item/_type/nav__item_type_footer.css);
+@import url(../__item/_type/nav__item_type_header.css);
+
 .nav__item:last-child{
   margin-right: 0px;
 }

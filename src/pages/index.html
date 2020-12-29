@@ -13,11 +13,11 @@
         <a href="index.html" class="header__logo link link_theme_light">NewsExplorer</a>
         <nav class="header__nav nav">
           <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link nav__link_active link link_theme_light">Главная</a>
+            <li class="nav__item nav__item_type_header">
+              <a href="index.html" class="nav__link nav__link_type_header nav__link_active link link_theme_light">Главная</a>
             </li>
-            <li class="nav__item">
-              <a href="articles.html" class="nav__link link link_theme_light">Сохраненные статьи</a>
+            <li class="nav__item nav__item_type_header">
+              <a href="articles.html" class="nav__link nav__link_type_header link link_theme_light">Сохраненные статьи</a>
             </li>
             <li class="nav__item">
               <button class="nav__button button button_theme_transparent">Авторизоваться</button>
@@ -38,7 +38,7 @@
           <h2 class="articles__title">Результаты поиска</h2>
           <div class="articles__container">
             <article class="articles__item article">
-              <div class="article__icon article__icon_type_unmarked"></div>
+              <div class="article__icon article__icon_type_marked"></div>
               <div class="article__unauth_massage">Войдите, чтобы сохранять статьи</div>
               <picture>
                 <img
@@ -106,23 +106,28 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__cpyright">&copy; 2020 Supersite, Powered by News API</div>
-        <nav class="footer__nav nav ">
-            <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link link" href="./index.html">Главная</a>
+        <div class="footer__copyright">&copy; 2020 Supersite, Powered by News API</div>
+        <nav class="footer__nav nav">
+            <ul class="nav__list nav__list_type_footer">
+                <li class=" nav__item_type_footer nav__item">
+                  <a class="nav__link nav__link_type_footer link link_theme_dark" href="./index.html">Главная</a>
                 </li>
-                <a class="nav__link link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+                <li class=" nav__item_type_footer nav__item">
+                  <a class="nav__link nav__link_type_footer link link_theme_dark" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+                </li>
             </ul>
             <div class="footer__social">
-                <img class="footer__social-icon" src="<%=require('../images/github.svg')%>" alt=" github icon ">
+              <a href="https://github.com" class="link">
+                <img class="footer__social-icon" src="<%=require('../images/github.svg')%>" alt=" github icon">
+              </a>
+              <a href="https://facebook.com" class="link">
                 <img class="footer__social-icon" src="<%=require('../images/fb.svg')%>" alt="facebook icon ">
+              </a>
             </div>
         </nav>
       </footer>
 
     </div>
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
-
 </body>
 </html>
