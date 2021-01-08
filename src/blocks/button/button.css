@@ -1,5 +1,6 @@
 @import url(../button/_theme/button_theme_transparent.css);
 @import url(../button/_theme/button_theme_blue.css);
+@import url(../button/_theme/button_theme_dark.css);
 
 .button{
 border-radius: 100px;

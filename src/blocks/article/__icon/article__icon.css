@@ -1,5 +1,6 @@
 @import url(../__icon/_type/article__icon_type_unmarked.css);
 @import url(../__icon/_type/article__icon_type_marked.css);
+@import url(../__icon/_type/article__icon_type_delete.css);
 
 .article__icon{
   width: 40px;

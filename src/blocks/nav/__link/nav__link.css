@@ -1,10 +1,11 @@
-@import url(../__link/_active/nav__link_active.css);
+@import url(../__link/_active/nav__link_active_light.css);
+@import url(../__link/_active/nav__link_active_dark.css);
 @import url(../__link/_type/nav__link_type_footer.css);
 @import url(../__link/_type/nav__link_type_header.css);
 
 
 .nav__link{
-  padding-bottom: 26px;
+  padding-bottom: 27px;
   font-family: Roboto;
   text-align: center;
   font-size: 18px;

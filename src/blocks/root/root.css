@@ -1,4 +1,1 @@
-.root{
-  background-image: url(../../images/header.jpg);
-  background-repeat: no-repeat;
-}
+@import url(../root/_page/root_page_index.css);

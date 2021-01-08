@@ -8,19 +8,21 @@
     <link rel="icon" href="<%=require('../images/favicon.svg')%>" type="image/svg+xml">
 </head>
 <body>
-    <div class="root">
-      <header class=" header ">
+    <div class="root root_page_index">
+      <header class=" header header_theme_dark">
         <a href="index.html" class="header__logo link link_theme_light">NewsExplorer</a>
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item nav__item_type_header">
-              <a href="index.html" class="nav__link nav__link_type_header nav__link_active link link_theme_light">Главная</a>
+              <a href="index.html" class="nav__link nav__link_type_header nav__link_active_light link link_theme_light">Главная</a>
             </li>
             <li class="nav__item nav__item_type_header">
               <a href="articles.html" class="nav__link nav__link_type_header link link_theme_light">Сохраненные статьи</a>
             </li>
             <li class="nav__item">
-              <button class="nav__button button button_theme_transparent">Авторизоваться</button>
+              <button class="nav__button nav__button_type_unlogin button button_theme_transparent">Авторизоваться
+                <img class="nav__button-image nav_button-image_type_hidden" src="/src/images/logout_white.svg">
+              </button>
             </li>
           </ul>
         </nav>
@@ -39,7 +41,7 @@
           <div class="articles__container">
             <article class="articles__item article">
               <div class="article__icon article__icon_type_marked"></div>
-              <div class="article__unauth_massage">Войдите, чтобы сохранять статьи</div>
+              <div class="article__icon-massage">Войдите, чтобы сохранять статьи</div>
               <picture>
                 <img
                   src="<%=require('../images/article.jpg')%>"
@@ -57,7 +59,7 @@
             </article>
             <article class="articles__item article">
               <div class="article__icon article__icon_type_unmarked"></div>
-              <div class="article__unauth_massage">Войдите, чтобы сохранять статьи</div>
+              <div class="article__icon-massage">Войдите, чтобы сохранять статьи</div>
               <picture>
                 <img
                   src="<%=require('../images/article.jpg')%>"
@@ -75,7 +77,7 @@
             </article>
             <article class="articles__item article">
               <div class="article__icon article__icon_type_unmarked"></div>
-              <div class="article__unauth_massage">Войдите, чтобы сохранять статьи</div>
+              <div class="article__icon-massage">Войдите, чтобы сохранять статьи</div>
               <picture>
                 <img
                   src="<%=require('../images/article.jpg')%>"
@@ -117,7 +119,7 @@
                 </li>
             </ul>
             <div class="footer__social">
-              <a href="https://github.com" class="link">
+              <a href="https://github.com/vitekv384" class="link">
                 <img class="footer__social-icon" src="<%=require('../images/github.svg')%>" alt=" github icon">
               </a>
               <a href="https://facebook.com" class="link">
@@ -126,8 +128,48 @@
             </div>
         </nav>
       </footer>
-
+      <div id="sign_in" class="popup">
+        <div class="popup__content">
+          <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
+          <h3 class="popup__title">Вход</h3>
+          <form class="popup__form" name="sign_in">
+            <label class="popup__label" for="email">Email</label>
+            <input type="email" id="email" name="email" class="popup__input popup__input_type_email" minlength="2" maxlength="30" required placeholder="Введите почту">
+            <span class="popup__error popup__error-title">Неправильный формат email</span>
+            <label class="popup__label" for="password">Пароль</label>
+            <input type="password" id="password" name="password" class="popup__input popup__input_type_password" required placeholder="Введите пароль">
+            <span class="popup__error popup__error-link">Неправильный формат email </span>
+            <button type="submit" name="button" class="button button_theme_blue popup__button" disabled="disabled">Войти</button>
+            <p class="popup__footer">или <a href="#" class="link popup__footer_link">Зарегистрироваться</a></p>
+          </form>
+        </div>
     </div>
+    <div id="sign_up" class="popup2">
+      <div class="popup__content">
+        <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
+        <h3 class="popup__title">Регистрация</h3>
+        <form class="popup__form" name="sign_up">
+          <label class="popup__label" for="email">Email</label>
+          <input type="email" id="email" name="email" class="popup__input popup__input_type_email" minlength="2" maxlength="30" required placeholder="Введите почту">
+          <span class="popup__error popup__error-title">Неправильный формат email</span>
+          <label class="popup__label" for="password">Пароль</label>
+          <input type="password" id="password" name="password" class="popup__input popup__input_type_password" required placeholder="Введите пароль">
+          <span class="popup__error popup__error-link">Неправильный формат email </span>
+          <label class="popup__label" for="name">Имя</label>
+          <input type="text" id="name" name="name" class="popup__input popup__input_type_name" required placeholder="Введите своё имя">
+          <span class="popup__error popup__error-link">Такой пользователь уже есть</span>
+          <button type="submit" name="button" class="button button_theme_blue popup__button" disabled="disabled">Зарегистрироваться</button>
+          <p class="popup__footer">или <a href="#" class="link popup__footer_link">Войти</a></p>
+        </form>
+      </div>
+  </div>
+  <div id="massage" class="popup3">
+    <div class="popup__content">
+      <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
+      <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+      <a href="#" class="link popup__massage-link">Войти</a>
+    </div>
+</div>
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>

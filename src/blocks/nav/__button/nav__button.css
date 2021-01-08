@@ -1,8 +1,10 @@
+@import url(../__button/_type/nav__button_type_unlogin.css);
+@import url(../__button/_type/nav__button_type_login.css);
+
 .nav__button{
   height: fit-content;
   margin: auto;
-  background: none;
-  width: 176px;
   height: 48px;
-  color: #fff;
+  display: flex;
+  align-items: center;
 }
