@@ -1,4 +1,20 @@
-.root_page_index{
+.root_page_index {
   background-image: url(../../../images/header.jpg);
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .root_page_index{
+    background-image: url(../../../images/header_768.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .root_page_index{
+    background-image: url(../../../images/header_320.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
 }

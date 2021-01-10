@@ -4,3 +4,16 @@
   justify-content: space-between;
   margin-left: 40px;
 }
+
+@media screen and (max-width: 1024px) {
+  .footer__social{
+    margin-left: 24px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer__social{
+    margin-left: 0;
+    
+  }
+}

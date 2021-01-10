@@ -3,11 +3,28 @@
 @import url(../header/_theme/header_theme_light.css);
 @import url(../header/_theme/header_theme_dark.css);
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
-  min-height: 80px ;
+  min-height: 80px;
   align-items: center;
   padding: 0 104px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 0 40px 0;
+    min-height: 66px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header {
+    padding: 0 16px 0;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .header {
+    min-height: 56px;
+  }
+}

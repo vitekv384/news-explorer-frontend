@@ -1,4 +1,4 @@
-.saved-articles-info__title{
+.saved-articles-info__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -6,4 +6,10 @@
   line-height: 24px;
   color: rgba(26, 27, 34, 0.5);
   margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .saved-articles-info__title {
+    font-size: 14px;
+  }
 }

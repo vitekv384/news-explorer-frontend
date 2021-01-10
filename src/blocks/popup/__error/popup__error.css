@@ -1,5 +1,5 @@
-.popup__error{
-  color: #FF0000;
+.popup__error {
+  color: #ff0000;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -10,12 +10,11 @@
   display: block;
 }
 
-.popup__error:last-of-type{
+.popup__error:last-of-type {
   margin: 3px 0 24px;
 }
 
-.popup__error:nth-of-type(3){
+.popup__error:nth-of-type(3) {
   margin: 17px 0 8px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }

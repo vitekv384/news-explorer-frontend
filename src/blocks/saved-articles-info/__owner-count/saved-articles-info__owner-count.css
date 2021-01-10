@@ -1,4 +1,4 @@
-.saved-articles-info__owner-count{
+.saved-articles-info__owner-count {
 font-family: Roboto Slab;
   font-style: normal;
   font-weight: normal;
@@ -6,5 +6,14 @@ font-family: Roboto Slab;
   line-height: 46px;
   color: #1A1B22;
   max-width: 530px;
-  margin: 28px 0 0 0;
+  margin: 28px 0 30px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .saved-articles-info__owner-count {
+    font-size: 30px;
+    line-height: 34px;
+    max-width: 336px;
+    margin: 16px 0;
+  }
 }

@@ -17,3 +17,18 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 1024px) {
+  .article__icon-massage {
+    top: 8px;
+    right: 52px;
+    left: 59px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .article__icon-massage {
+    top: 16px;
+    right: 61px;
+  }
+}

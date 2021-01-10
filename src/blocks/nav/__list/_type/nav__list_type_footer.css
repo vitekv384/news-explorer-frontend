@@ -1,4 +1,18 @@
-.nav__list_type_footer{
+.nav__list_type_footer {
   min-width: 304px;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__list_type_footer {
+    min-width: 264px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav__list_type_footer {
+    flex-direction: column;
+    min-width: 0;
+  }
 }

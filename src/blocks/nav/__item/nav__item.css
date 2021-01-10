@@ -1,6 +1,6 @@
-@import url(../__item/_type/nav__item_type_footer.css);
 @import url(../__item/_type/nav__item_type_header.css);
+@import url(../__item/_type/nav__item_type_footer.css);
 
-.nav__item:last-child{
+.nav__item:last-child {
   margin-right: 0px;
 }

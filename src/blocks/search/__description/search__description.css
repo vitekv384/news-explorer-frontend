@@ -7,3 +7,23 @@
   max-width: 545px;
   margin: 0 0 64px 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .search__description {
+    margin: 0 0 48px 0;
+    max-width: 452px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .search__description {
+    margin: 0 0 48px 0;
+    max-width: 288px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search__description {
+    margin: 0 0 122px 0;
+  }
+}

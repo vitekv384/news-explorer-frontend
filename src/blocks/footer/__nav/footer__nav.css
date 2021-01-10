@@ -1,3 +1,9 @@
 .footer__nav{
   display: flex;
 }
+
+@media screen and (max-width: 1024px) {
+  .footer__nav{
+    justify-content: space-between;
+  }
+}

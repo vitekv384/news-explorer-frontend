@@ -1,4 +1,4 @@
-.article__address{
+.article__address {
   margin: 18px 0 0;
   font-family: Roboto Slab;
   font-style: normal;
@@ -8,4 +8,16 @@
   letter-spacing: 0.4px;
   text-transform: uppercase;
   color: #B6BCBF;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__address { 
+    margin: 12px 0 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .article__address { 
+    margin: 8px 0 0;
+  }
 }

@@ -1,4 +1,4 @@
-.search__input{
+.search__input {
   width: 100%;
   min-height: 64px;
   border: solid 1px #d1d2d6;
@@ -7,14 +7,27 @@
   font-family: Roboto;
   font-size: 16px;
   line-height: 22px;
+  backdrop-filter: blur(100px);
   font-weight: 400;
   box-sizing: border-box;
   color: #1A1B22;
 }
 
-input.search__input::placeholder{
+input.search__input::placeholder {
   color:#B6BCBF;
 }
-input.search__input:focus{
+input.search__input:focus {
   outline: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .search__input{
+    min-height: 56px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search__input {
+    margin: 0 0 16px 0;
+  }
 }

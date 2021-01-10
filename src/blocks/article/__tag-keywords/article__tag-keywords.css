@@ -1,0 +1,24 @@
+.article__tag-keywords {
+  display: flex;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  color: #000;
+  position: absolute;
+  padding: 0 12px;
+  left: 24px;
+  top:24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__tag-keywords {
+    top: 8px;
+    left: 8px;
+  }
+}

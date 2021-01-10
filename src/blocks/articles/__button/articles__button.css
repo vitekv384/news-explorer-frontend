@@ -1,12 +1,29 @@
-.articles__button{
+.articles__button {
   width: 288px;
   height: 64px;
+  font-size: 18px;
   background: #FFFFFF;
   border-radius: 80px;
   align-self: center;
   margin: 64px 0 18px;
   border: 0;
 }
-.articles__button:hover{
+.articles__button:hover {
   opacity: 0.9;
+}
+
+@media screen and (max-width: 1024px) {
+  .articles__button {
+    width: 240px;
+    height: 56px;
+    margin: 0 0 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .articles__button {
+    width: 288px;
+    height: 56px;
+    margin: 0 0 32px;
+  }
 }

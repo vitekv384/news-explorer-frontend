@@ -1,4 +1,4 @@
-.article__description{
+.article__description {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -6,4 +6,15 @@
   line-height: 22px;
   color:#1A1B22;
   margin: 16px 0 0 ;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .article__description {
+      overflow: hidden;
+      height: 88px;
+      margin: 10px 0 0 ;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
   }

@@ -1,3 +1,5 @@
-.nav__item_type_footer{
-  margin: auto 0;
+@media screen and (max-width: 450px) {
+  .nav__item_type_footer {
+    margin: 0 0 30px;
+  }
 }

@@ -1,9 +1,16 @@
 @import url(../keywords/__title/keywords__title.css);
 @import url(../keywords/__text/keywords__text.css);
 
-.keywords{
+.keywords {
   font-family: Roboto;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .keywords {
+    font-size: 14px;
+  }
 }

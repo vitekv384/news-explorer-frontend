@@ -8,7 +8,18 @@
   padding-bottom: 27px;
   font-family: Roboto;
   text-align: center;
-  font-size: 18px;
   line-height: 24px;
   font-style: normal;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__link{
+    padding-bottom: 22px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav__link{
+    padding-bottom: 0;
+  }
 }

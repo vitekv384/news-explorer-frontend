@@ -1,6 +1,12 @@
-.main__saved-articles-info{
+.main__saved-articles-info {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   padding: 40px 104px 56px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__saved-articles-info {
+    padding: 24px 40px 32px;
+  }
 }

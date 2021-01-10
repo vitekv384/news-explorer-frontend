@@ -6,3 +6,17 @@
   line-height: 46px;
   margin: 0 0 24px 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .author__title{
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .author__title{
+    margin: 24px 0 0;
+  }
+}
