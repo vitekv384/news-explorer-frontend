@@ -13,3 +13,9 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .saved-articles-info__title {
+    font-size: 12px;
+  }
+}

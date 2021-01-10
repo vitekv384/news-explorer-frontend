@@ -14,3 +14,10 @@
     font-size: 14px;
   }
 }
+
+
+@media screen and (max-width: 450px) {
+  .keywords {
+    font-size: 18px;
+  }
+}

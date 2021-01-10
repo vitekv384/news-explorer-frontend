@@ -10,3 +10,10 @@
     padding: 24px 40px 32px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .main__saved-articles-info {
+    padding: 8px 16px 32px;
+  }
+}
+
