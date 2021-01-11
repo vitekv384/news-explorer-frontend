@@ -125,12 +125,12 @@
       </nav>
       <div class="footer__copyright">&copy; 2020 Supersite, Powered by News API</div>
     </footer>
-    <div class="popup popup_mobile">
+    <div id="mobile" class="popup popup_mobile">
       <nav class="mobile-menu">
         <div class="mobile-menu__header header header_theme_dark">
           <a href="index.html" class="header__logo link link_theme_light">NewsExplorer</a>
           <div class="mobile-menu__close">
-            <img src="<%=require('../images/close.svg')%>" class="mobile-menu__close-image" alt="">
+            <img src="<%=require('../images/close.svg')%>" class="mobile-menu__close-image close" alt="">
           </div>
         </div>
         <div class="mobile-menu__nav nav">
@@ -143,12 +143,14 @@
               <a href="articles.html" class="nav__link nav__link_type_mobile link link_theme_light">Сохраненные статьи</a>
             </li>
             <li class="nav__item">
-              <button class="nav__button nav__button_type_unlogin button button_theme_transparent mobile-menu__button">Грета
+              <button class="nav__button nav__button_type_unlogin button button_theme_transparent mobile-menu__button signup_mobile">Грета
                 <img class="nav__button-image" src="<%=require('../images/logout_white.svg')%>">
               </button>
             </li>
           </ul>
         </div>
+      </nav>
+    </div>
   </div>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>

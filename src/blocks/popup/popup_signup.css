@@ -1,10 +1,10 @@
-.popup_signin {
+.popup_signup {
   top: 0;
   display: none;
 }
 
-@media screen and (max-width: 400px){
-  .popup_mobile {
+@media screen and (max-width: 580px){
+  .popup_signin {
     top:56px;
   }
 }

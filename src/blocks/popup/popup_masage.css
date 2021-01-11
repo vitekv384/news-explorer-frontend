@@ -3,7 +3,7 @@
   display: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 580px){
   .popup_massage {
     top:56px;
   }

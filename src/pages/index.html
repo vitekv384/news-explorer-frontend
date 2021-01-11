@@ -43,6 +43,15 @@
           <button class="search__button button button_theme_blue">Искать</button>
         </form>
       </section>
+      <section class="main__searching searching">
+        <i class="searching__preloader"></i>
+        <p class="searching__info">Идет поиск новостей...</p>
+      </section>
+      <section class="main__noresult searching">
+        <img class="searching__image" src="<%=require('../images/not-found.svg')%>">
+        <h3 class="searching__title">Ничего не найдено</h3>
+        <p class="searching__info">К сожалению по вашему запросу ничего не найдено.</p>
+      </section>
       <section class="main__articles articles">
         <h2 class="articles__title">Результаты поиска</h2>
         <div class="articles__container">
@@ -135,9 +144,9 @@
       </nav>
       <div class="footer__copyright">&copy; 2020 Supersite, Powered by News API</div>
     </footer>
-    <div id="sign_in" class="popup popup_signin">
+    <div id="signin" class="popup popup_signin">
       <div class="popup__content">
-        <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
+        <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close close">
         <h3 class="popup__title">Вход</h3>
         <form class="popup__form" name="sign_in">
           <label class="popup__label" for="email">Email</label>
@@ -150,13 +159,13 @@
           <span class="popup__error popup__error-password">Неправильный формат пароля</span>
           <button type="submit" name="button" class="button button_theme_blue popup__button"
             disabled="disabled">Войти</button>
-          <p class="popup__footer">или <a href="#" class="link popup__footer_link">Зарегистрироваться</a></p>
+          <p class="popup__footer">или <a href="#" class="link popup__footer_link signup">Зарегистрироваться</a></p>
         </form>
       </div>
     </div>
-    <div id="sign_up" class="popup popup_signup">
+    <div id="signup" class="popup popup_signup">
       <div class="popup__content">
-        <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
+        <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close close">
         <h3 class="popup__title">Регистрация</h3>
         <form class="popup__form" name="sign_up">
           <label class="popup__label" for="email">Email</label>
@@ -171,25 +180,25 @@
           <input type="text" id="name" name="name" class="popup__input popup__input_type_name" required
             placeholder="Введите своё имя">
           <span class="popup__error popup__error-name">Такой пользователь уже есть</span>
-          <button type="submit" name="button" class="button button_theme_blue popup__button"
+          <button id="signup_button" type="submit" name="button" class="button button_theme_blue popup__button"
             disabled="disabled">Зарегистрироваться</button>
-          <p class="popup__footer">или <a href="#" class="link popup__footer_link">Войти</a></p>
+          <p class="popup__footer">или <a href="#" class="link popup__footer_link signin">Войти</a></p>
         </form>
       </div>
     </div>
     <div id="massage" class="popup popup_massage">
       <div class="popup__content">
-        <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
+        <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close close">
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
         <a href="#" class="link popup__massage-link">Войти</a>
       </div>
     </div>
-    <div class="popup popup_mobile">
+    <div id="mobile" class="popup popup_mobile">
       <nav class="mobile-menu">
         <div class="mobile-menu__header header header_theme_dark">
           <a href="index.html" class="header__logo link link_theme_light">NewsExplorer</a>
           <div class="mobile-menu__close">
-            <img src="<%=require('../images/close.svg')%>" class="mobile-menu__close-image" alt="">
+            <img src="<%=require('../images/close.svg')%>" class="mobile-menu__close-image close" alt="">
           </div>
         </div>
         <div class="mobile-menu__nav nav">
@@ -202,7 +211,7 @@
               <a href="articles.html" class="nav__link nav__link_type_mobile link link_theme_light">Сохраненные статьи</a>
             </li>
             <li class="nav__item">
-              <button class="nav__button nav__button_type_unlogin button button_theme_transparent mobile-menu__button">Авторизоваться
+              <button class="nav__button nav__button_type_unlogin button button_theme_transparent mobile-menu__button signup_mobile">Авторизоваться
                 <img class="nav__button-image nav_button-image_type_hidden" src="<%=require('../images/logout_white.svg')%>">
               </button>
             </li>
