@@ -24,13 +24,13 @@
           </li>
           <li class="nav__item">
             <button class="nav__button nav__button_type_login button button_theme_dark">Грета
-              <img class="nav__button-image" src="/src/images/logout.svg">
+              <img class="nav__button-image" src="<%=require('../images/logout.svg')%>">
             </button>
           </li>
         </ul>
       </nav>
       <button class="header__mobile-button">
-        <img src="/src/images/menu_black.svg">
+        <img src="<%=require('../images/menu_black.svg')%>">
       </button>
     </header>
     <main class="main">
@@ -125,6 +125,30 @@
       </nav>
       <div class="footer__copyright">&copy; 2020 Supersite, Powered by News API</div>
     </footer>
+    <div class="popup popup_mobile">
+      <nav class="mobile-menu">
+        <div class="mobile-menu__header header header_theme_dark">
+          <a href="index.html" class="header__logo link link_theme_light">NewsExplorer</a>
+          <div class="mobile-menu__close">
+            <img src="<%=require('../images/close.svg')%>" class="mobile-menu__close-image" alt="">
+          </div>
+        </div>
+        <div class="mobile-menu__nav nav">
+          <ul class="nav__list nav__list_type_mobile">
+            <li class="nav__item">
+              <a href="index.html"
+                class="nav__link nav__link_type_mobile link link_theme_light">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="articles.html" class="nav__link nav__link_type_mobile link link_theme_light">Сохраненные статьи</a>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button nav__button_type_unlogin button button_theme_transparent mobile-menu__button">Грета
+                <img class="nav__button-image" src="<%=require('../images/logout_white.svg')%>">
+              </button>
+            </li>
+          </ul>
+        </div>
   </div>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>

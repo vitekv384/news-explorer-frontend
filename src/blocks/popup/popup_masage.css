@@ -1,0 +1,10 @@
+.popup_massage {
+  top:0;
+  display: none;
+}
+
+@media screen and (max-width: 400px){
+  .popup_massage {
+    top:56px;
+  }
+}

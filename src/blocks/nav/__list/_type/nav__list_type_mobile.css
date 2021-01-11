@@ -1,0 +1,4 @@
+.nav__list_type_mobile{
+  display: flex;
+  flex-direction: column;
+}

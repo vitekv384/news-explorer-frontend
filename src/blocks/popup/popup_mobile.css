@@ -1,0 +1,9 @@
+.popup_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 400px){
+  .popup_mobile {
+    top:0;
+  }
+}

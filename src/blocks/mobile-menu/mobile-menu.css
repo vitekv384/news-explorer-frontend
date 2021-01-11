@@ -1,2 +1,8 @@
 @import url(../mobile-menu/__header/mobile-menu__header.css);
 @import url(../mobile-menu/__close-image/mobile-menu__close-image.css);
+@import url(../mobile-menu/__nav/mobile-menu__nav.css);
+@import url(../mobile-menu/__button/mobile-menu__button.css);
+
+.mobile-menu{
+  width: 100%;
+}

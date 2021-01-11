@@ -24,13 +24,13 @@
           </li>
           <li class="nav__item">
             <button class="nav__button nav__button_type_unlogin button button_theme_transparent">Авторизоваться
-              <img class="nav__button-image nav_button-image_type_hidden" src="/src/images/logout_white.svg">
+              <img class="nav__button-image nav_button-image_type_hidden" src="<%=require('../images/logout_white.svg')%>">
             </button>
           </li>
         </ul>
       </nav>
       <button class="header__mobile-button">
-        <img src="/src/images/menu.svg">
+        <img src="<%=require('../images/menu.svg')%>">
       </button>
     </header>
     <main class="main">
@@ -135,7 +135,7 @@
       </nav>
       <div class="footer__copyright">&copy; 2020 Supersite, Powered by News API</div>
     </footer>
-    <div id="sign_in" class="popup">
+    <div id="sign_in" class="popup popup_signin">
       <div class="popup__content">
         <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
         <h3 class="popup__title">Вход</h3>
@@ -154,7 +154,7 @@
         </form>
       </div>
     </div>
-    <div id="sign_up" class="popup2">
+    <div id="sign_up" class="popup popup_signup">
       <div class="popup__content">
         <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
         <h3 class="popup__title">Регистрация</h3>
@@ -177,38 +177,39 @@
         </form>
       </div>
     </div>
-    <div id="massage" class="popup3">
+    <div id="massage" class="popup popup_massage">
       <div class="popup__content">
         <img src="<%=require('../images/close.svg')%>" alt="" class="popup__close">
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
         <a href="#" class="link popup__massage-link">Войти</a>
       </div>
-    </div> 
-
-    <nav class="mobile-menu">
-      <div class="mobile-menu__header header header_theme_dark">
-        <a href="index.html" class="header__logo link link_theme_light">NewsExplorer</a>
-        <div class="mobile-menu__close">
-          <img src="<%=require('../images/close.svg')%>" class="mobile-menu__close-image" alt="">
+    </div>
+    <div class="popup popup_mobile">
+      <nav class="mobile-menu">
+        <div class="mobile-menu__header header header_theme_dark">
+          <a href="index.html" class="header__logo link link_theme_light">NewsExplorer</a>
+          <div class="mobile-menu__close">
+            <img src="<%=require('../images/close.svg')%>" class="mobile-menu__close-image" alt="">
+          </div>
         </div>
-      </div>
-      <div class="mobele-menu__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item nav__item_type_header">
-            <a href="index.html"
-              class="nav__link nav__link_type_header nav__link_active_light link link_theme_light">Главная</a>
-          </li>
-          <li class="nav__item nav__item_type_header">
-            <a href="articles.html" class="nav__link nav__link_type_header link link_theme_light">Сохраненные статьи</a>
-          </li>
-          <li class="nav__item">
-            <button class="nav__button nav__button_type_unlogin button button_theme_transparent">Авторизоваться
-              <img class="nav__button-image nav_button-image_type_hidden" src="/src/images/logout_white.svg">
-            </button>
-          </li>
-        </ul>
-      </div>  
-    </nav>
+        <div class="mobile-menu__nav nav">
+          <ul class="nav__list nav__list_type_mobile">
+            <li class="nav__item">
+              <a href="index.html"
+                class="nav__link nav__link_type_mobile link link_theme_light">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="articles.html" class="nav__link nav__link_type_mobile link link_theme_light">Сохраненные статьи</a>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button nav__button_type_unlogin button button_theme_transparent mobile-menu__button">Авторизоваться
+                <img class="nav__button-image nav_button-image_type_hidden" src="<%=require('../images/logout_white.svg')%>">
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </div>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>

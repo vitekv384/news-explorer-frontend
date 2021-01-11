@@ -2,13 +2,13 @@
 @import url(../__link/_active/nav__link_active_dark.css);
 @import url(../__link/_type/nav__link_type_footer.css);
 @import url(../__link/_type/nav__link_type_header.css);
+@import url(../__link/_type/nav__link_type_mobile.css);
 
 
 .nav__link{
   padding-bottom: 27px;
   font-family: Roboto;
   text-align: center;
-  line-height: 24px;
   font-style: normal;
 }
 
