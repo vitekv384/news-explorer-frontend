@@ -11,7 +11,7 @@ NewsExplorer - проект, который позволяет искать ак
  - Макет адаптирован под популярные разрешения
 
 ## 4. Установка  
-`git clone https://github.com/vitekv384/news-explorer-frontend news-explorer-frontend`  
+`git clone https://github.com/vitekv384/news-explorer-frontend`  
 `npm i`  
 
 ## 5. Используемые технологии
