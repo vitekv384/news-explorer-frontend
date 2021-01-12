@@ -4,7 +4,7 @@
   height: 40px;
   top:24px;
   right: 69px;
-  box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);  
+  box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
   border-radius: 10px;
   background-color:transparent;
   position: absolute;
@@ -22,7 +22,8 @@
   .article__icon-massage {
     top: 8px;
     right: 52px;
-    left: 59px;
+    margin-left: 8px;
+
   }
 }
 
@@ -30,5 +31,6 @@
   .article__icon-massage {
     top: 16px;
     right: 61px;
+    margin-left: 16px;
   }
 }
