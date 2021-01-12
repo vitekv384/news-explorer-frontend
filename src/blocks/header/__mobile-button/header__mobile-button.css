@@ -1,0 +1,16 @@
+.header__mobile-button {
+  background: none;
+  border: none;
+  display: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 580px) {
+  .header__mobile-button {
+    display: flex;
+  }
+}
+
+.header__mobile-butto{
+  outline: none;
+}

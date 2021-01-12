@@ -1,0 +1,19 @@
+.main__articles {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  background: #f5f6f7;
+  padding: 62px 104px 62px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__articles {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main__articles {
+    padding: 0 16px;
+  }
+}

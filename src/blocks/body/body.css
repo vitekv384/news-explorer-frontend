@@ -1,0 +1,10 @@
+body {
+  background-color: #fff;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  max-width: 1440px;
+  margin: 0 auto 0;
+}

@@ -1,0 +1,9 @@
+.nav__item_type_header{
+  margin: auto 32px auto 0
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__item_type_header {
+    margin: auto 16px auto 0
+  }
+}

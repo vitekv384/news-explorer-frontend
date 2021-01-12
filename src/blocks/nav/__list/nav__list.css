@@ -1,0 +1,9 @@
+@import url(../__list/_type/nav__list_type_footer.css);
+@import url(../__list/_type/nav__list_type_mobile.css);
+
+.nav__list{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

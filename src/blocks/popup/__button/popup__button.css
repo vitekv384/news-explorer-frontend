@@ -1,0 +1,10 @@
+.popup__button {
+  width: 100%;
+  height: 64px;
+  font-size: 18px;
+}
+.popup__button:disabled {
+  color: #b6bcbf;
+  background-color: #e6e8eb;
+  box-shadow: none;
+}

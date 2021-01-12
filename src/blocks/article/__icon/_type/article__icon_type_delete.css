@@ -1,0 +1,13 @@
+.article__icon_type_delete{
+  background-image: url(../../../../images/delete_icon.svg);
+}
+
+.article__icon_type_delete:hover{
+  background-image: url(../../../../images/delete_icon_hover.svg);
+}
+
+.article__icon_type_delete:hover ~ .article__icon-massage {
+  background-color: #fff;
+  color: #000;
+  transition: 0.5s;
+}

@@ -1,0 +1,11 @@
+.nav__link_type_header{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__link_type_header{
+    font-size: 16px;
+  }
+}

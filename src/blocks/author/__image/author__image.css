@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px) {
+  .author__image {
+    max-width: 232px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .author__image {
+    max-width: 272px;
+  }
+}

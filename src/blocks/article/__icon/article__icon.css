@@ -1,0 +1,29 @@
+@import url(../__icon/_type/article__icon_type_unmarked.css);
+@import url(../__icon/_type/article__icon_type_marked.css);
+@import url(../__icon/_type/article__icon_type_delete.css);
+
+.article__icon{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__icon {
+    right: 8px;
+    top: 8px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .article__icon {
+    right: 16px;
+    top: 16px;
+  }
+}
+
+
+

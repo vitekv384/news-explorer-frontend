@@ -1,0 +1,11 @@
+@import url(../main/__search/main__search.css);
+@import url(../main/__articles/main__articles.css);
+@import url(../main/__author/main__author.css);
+@import url(../main/__searching/main__searching.css);
+@import url(../main/__noresult/main__noresult.css);
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

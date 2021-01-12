@@ -1,0 +1,15 @@
+.article__container { 
+  padding: 20px 24px 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__container { 
+    padding: 13px 16px 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .article__container { 
+    padding: 16px;
+  }
+}

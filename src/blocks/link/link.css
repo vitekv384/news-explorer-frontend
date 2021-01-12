@@ -1,0 +1,7 @@
+@import url(../link/_theme/link_theme_light.css);
+@import url(../link/_theme/link_theme_dark.css);
+
+
+.link{
+  text-decoration: none;
+}

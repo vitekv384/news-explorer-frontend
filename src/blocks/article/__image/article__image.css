@@ -1,0 +1,17 @@
+.article__image {
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .article__image {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .article__image {
+    height: 196px;
+  }
+}
