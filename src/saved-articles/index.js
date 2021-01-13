@@ -1,6 +1,6 @@
-import './css/articles.css';
-import './css/index.css';
-import { Popup } from './classes/Popup';
+import '../css/articles.css';
+import '../css/index.css';
+import { Popup } from '../classes/Popup';
 
 const popupMobile = document.querySelector('#mobile');
 const mobilOpenButton = document.querySelector('.header__mobile-button');
