@@ -15,7 +15,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js',
+    filename: './js/[name].[chunkhash].js',
   },
   module: {
     rules: [
@@ -81,7 +81,7 @@ module.exports = {
       chunks: ['articles'],
     }),
     new MiniCssExtractPlugin({
-      filename: 'index.[contenthash].css',
+      filename: './style/index.[contenthash].css',
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
