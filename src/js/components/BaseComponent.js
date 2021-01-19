@@ -10,7 +10,7 @@ export default class BaseComponent {
 
   _setListeners(listeners) {
     listeners.forEach((listener) => {
-      this._addListener(listener);
+      if (listener.element) this._addListener(listener);
     });
   }
 
