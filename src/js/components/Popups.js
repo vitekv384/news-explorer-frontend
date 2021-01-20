@@ -29,7 +29,6 @@ export default class Popup extends BaseComponent {
   }
 
   _setHendlers() {
-    console.log(this.signupButton);
     super._setListeners([
       {
         element: this.closeButton,
