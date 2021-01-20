@@ -45,12 +45,36 @@ export default class Popup extends BaseComponent {
         event: 'click',
         callback: () => { this._close(); this.popupOpen(this.signinButton.dataset.popup); },
       },
+      {
+        element: this.popupButton,
+        event: 'click',
+        callback: (event) => { this.actionData(event); },
+      },
     ]);
   }
 
   _setContent() {
     this.popupElement = this._getTemplate();
     this.root.appendChild(this.popupElement);
+  }
+
+  _actionData(event) {
+    event.preventDefault();
+    const data = this.getformInstance().getInfo();
+    const promise = new Promise((resolve, reject) => {
+      const res = this.api[`${event.target.dataset.buttonAction}`](data);
+      if (res) { resolve(res); } else { reject('Ошибка сервера'); }
+    });
+    promise.then((data) => {
+      if (data === 'autorized') {
+        window.location.reload();
+      }
+      if (data === 'registred') {
+        this._close();
+        this.popupOpenFunc('popup_success_registration');
+      } else { this.getformInstance().setServerError(data.message); }
+    })
+      .catch((err) => this.getformInstance().setServerError(err.message));
   }
 
   _close() {
