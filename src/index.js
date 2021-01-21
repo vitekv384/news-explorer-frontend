@@ -1,16 +1,24 @@
 import './css/index.css';
 
-import Popup from './js/components/Popups';
+import Popup from './js/components/Popup';
 import Form from './js/components/Form';
 import templates from './js/templates/Templates';
+import MainApi from './js/api/MainApi';
 
 const formValidator = (form) => new Form(form);
+const config = {
+  baseUrl: 'https://api.news-app.tk',
+  isAuth: !!localStorage.getItem('token'),
+};
+
+const mainApi = new MainApi(config);
 
 const popupOpen = (popupName) => {
   new Popup({
     popupTemplate: templates.popups[`${popupName}`],
     popupOpen,
     formValidator,
+    mainApi,
   }).open();
 };
 

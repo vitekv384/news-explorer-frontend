@@ -4,9 +4,9 @@ export default class MainApi {
     this.headers = config.headers;
   }
 
-  signup() {
+  signup(data) {
     return fetch(`${this.url}/signup`, {
-      metod: 'POST',
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
@@ -21,7 +21,7 @@ export default class MainApi {
       .catch((error) => error.json());
   }
 
-  signin() {
+  signin(data) {
     return fetch(`${this.url}/signin`, {
       metod: 'POST',
       headers: {

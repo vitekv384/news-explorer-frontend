@@ -26,7 +26,7 @@ export default class Form extends BaseComponent {
     return input.validity.valid;
   }
 
-  _validateForm() {
+  validateForm() {
     this._inputs.forEach((input) => {
       super._setListeners([
         {
@@ -48,5 +48,9 @@ export default class Form extends BaseComponent {
         },
       ]);
     });
+  }
+
+  getInfo() {
+    return Array.from(this._inputs).map((el) => el);
   }
 }

@@ -13,7 +13,7 @@ export default {
             minlength="8" maxlength="32"placeholder="Введите пароль">
           <span class="popup__error popup__error_password"></span>
           <button type="submit" name="button" class="button button_theme_blue popup__button"
-            disabled="disabled">Войти</button>
+            disabled="disabled" data-action-button="signin">Войти</button>
           <p class="popup__footer">или <a href="#" class="link popup__footer_link signup" data-popup="popup_signup">Зарегистрироваться</a></p>
         </form>
       </div>
@@ -35,7 +35,7 @@ export default {
             minlength="2" maxlength="10" placeholder="Введите своё имя">
           <span class="popup__error popup__error_name"></span>
           <button id="signup_button" type="submit" name="button" class="button button_theme_blue popup__button"
-            disabled="disabled">Зарегистрироваться</button>
+            disabled="disabled" data-action-button="signup">Зарегистрироваться</button>
           <p class="popup__footer">или <a href="#" class="link popup__footer_link signin" data-popup="popup_signin">Войти</a></p>
         </form>
       </div>
