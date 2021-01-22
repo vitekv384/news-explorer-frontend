@@ -18,7 +18,7 @@ export default class Popup extends BaseComponent {
     this.signupLink = this.popupElement.querySelector('.signup');
     this.signinLink = this.popupElement.querySelector('.signin');
     this.form = this.popupElement.querySelector('.popup__form');
-    this.formValidator(this.form).validateForm();
+    if (this.form) { this.formValidator(this.form).validateForm(); }
     this._setHendlers();
   }
 
@@ -72,7 +72,7 @@ export default class Popup extends BaseComponent {
       }
       if (data === 'registred') {
         this._close();
-        this.open('popup_success_registration');
+        this.popupOpen('popup_massage');
       } else { this.getformInstance().setServerError(data.message); }
     });
     // .catch((err) => this.getformInstance().setServerError(err.message));

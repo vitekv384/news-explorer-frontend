@@ -40,5 +40,12 @@ export default {
         </form>
       </div>
     `,
+    popup_massage: `
+      <div class="popup__content">
+        <img src="../images/close.svg" alt="" class="popup__close close">
+        <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+        <a href="#" class="link popup__massage-link" data-popup="popup_signin">Войти</a>
+      </div>
+    `,
   },
 };
