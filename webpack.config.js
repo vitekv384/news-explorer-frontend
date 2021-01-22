@@ -51,14 +51,15 @@ module.exports = {
         loader: 'file-loader?name=./fonts/[name].[ext]',
       },
       {
-        test: /\.css$/,
-        use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-          {
-            loader: 'css-loader',
+        test: /\.css$/i,
+        use: [
+          isDev ? { loader: 'style-loader' } : {
+            loader: MiniCssExtractPlugin.loader,
             options: {
-              importLoaders: 2,
+              publicPath: '../',
             },
           },
+          'css-loader',
           'postcss-loader',
         ],
       },

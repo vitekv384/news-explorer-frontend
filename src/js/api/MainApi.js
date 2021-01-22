@@ -7,13 +7,14 @@ export default class MainApi {
   signup(data) {
     return fetch(`${this.url}/signup`, {
       method: 'POST',
+      credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        email: data[0].value,
-        password: data[1].value,
-        name: data[2].value,
+        email: data.email,
+        password: data.password,
+        name: data.name,
       }),
     })
       .then((res) => (res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`)))
@@ -23,28 +24,27 @@ export default class MainApi {
 
   signin(data) {
     return fetch(`${this.url}/signin`, {
-      metod: 'POST',
+      method: 'POST',
+      credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        email: data[0].value,
-        password: data[1].value,
+        email: data.email,
+        password: data.password,
       }),
     })
       .then((res) => (res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`)))
-      .then((data) => {
-        localStorage.setItem('token', data.token);
-        return this.getUserData().then((data) => { localStorage.setItem('userName', data.user.name); return 'autorized'; });
-      })
+      .then(() => 'autorized')
       .catch((error) => error.json());
   }
 
   getUserData() {
-    return fetch(`${this.baseUrl}/users/me`, {
+    return fetch(`${this.url}/users/me`, {
       method: 'GET',
+      credentials: 'include',
       headers: {
-        authorization: `Bearer ${localStorage.getItem('token')}`,
+        'Content-Type': 'application/json',
       },
     })
       .then((res) => (res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`)))

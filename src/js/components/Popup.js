@@ -15,8 +15,8 @@ export default class Popup extends BaseComponent {
   open() {
     this._setContent();
     this.closeButton = this.popupElement.querySelector('.popup__close');
-    this.signupButton = this.popupElement.querySelector('.signup');
-    this.signinButton = this.popupElement.querySelector('.signin');
+    this.signupLink = this.popupElement.querySelector('.signup');
+    this.signinLink = this.popupElement.querySelector('.signin');
     this.form = this.popupElement.querySelector('.popup__form');
     this.formValidator(this.form).validateForm();
     this._setHendlers();
@@ -37,14 +37,14 @@ export default class Popup extends BaseComponent {
         callback: () => this._close(),
       },
       {
-        element: this.signupButton,
+        element: this.signupLink,
         event: 'click',
-        callback: () => { this._close(); this.popupOpen(this.signupButton.dataset.popup); },
+        callback: () => { this._close(); this.popupOpen(this.signupLink.dataset.popup); },
       },
       {
-        element: this.signinButton,
+        element: this.signinLink,
         event: 'click',
-        callback: () => { this._close(); this.popupOpen(this.signinButton.dataset.popup); },
+        callback: () => { this._close(); this.popupOpen(this.signinLink.dataset.popup); },
       },
       {
         element: this.formValidator(this.form)._button,
@@ -72,7 +72,7 @@ export default class Popup extends BaseComponent {
       }
       if (data === 'registred') {
         this._close();
-        this.popupOpenFunc('popup_success_registration');
+        this.open('popup_success_registration');
       } else { this.getformInstance().setServerError(data.message); }
     });
     // .catch((err) => this.getformInstance().setServerError(err.message));

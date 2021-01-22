@@ -51,6 +51,12 @@ export default class Form extends BaseComponent {
   }
 
   getInfo() {
-    return Array.from(this._inputs).map((el) => el);
+    const data = {};
+    this._inputs.forEach((input) => {
+      if (input.tagName === 'INPUT') {
+        data[input.name] = input.value;
+      }
+    });
+    return data;
   }
 }
