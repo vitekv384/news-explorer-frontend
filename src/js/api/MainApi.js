@@ -35,8 +35,11 @@ export default class MainApi {
       }),
     })
       .then((res) => (res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`)))
-      .then(() => 'autorized')
-      .catch((error) => error.json());
+      .then((data) => {
+        localStorage.setItem('token', data.token);
+        return this.getUserData().then((data) => { localStorage.setItem('userName', data.data.name); return 'autorized'; });
+      })
+      // .catch((error) => error.json());
   }
 
   getUserData() {

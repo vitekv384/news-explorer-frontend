@@ -15,9 +15,9 @@ export default class Popup extends BaseComponent {
   open() {
     this._setContent();
     this.closeButton = this.popupElement.querySelector('.popup__close');
-    this.signupLink = this.popupElement.querySelector('.signup');
-    this.signinLink = this.popupElement.querySelector('.signin');
+    this.signLink = this.popupElement.querySelector('.popup__footer_link');
     this.form = this.popupElement.querySelector('.popup__form');
+    this.actionButton = this.popupElement.querySelector('.popup__button');
     if (this.form) { this.formValidator(this.form).validateForm(); }
     this._setHendlers();
   }
@@ -37,17 +37,12 @@ export default class Popup extends BaseComponent {
         callback: () => this._close(),
       },
       {
-        element: this.signupLink,
+        element: this.signLink,
         event: 'click',
-        callback: () => { this._close(); this.popupOpen(this.signupLink.dataset.popup); },
+        callback: () => { this._close(); this.popupOpen(this.signLink.dataset.popup); },
       },
       {
-        element: this.signinLink,
-        event: 'click',
-        callback: () => { this._close(); this.popupOpen(this.signinLink.dataset.popup); },
-      },
-      {
-        element: this.formValidator(this.form)._button,
+        element: this.actionButton,
         event: 'click',
         callback: (event) => { this._actionData(event); },
       },
@@ -68,12 +63,12 @@ export default class Popup extends BaseComponent {
     });
     promise.then((data) => {
       if (data === 'autorized') {
-        window.location.reload();
+        // window.location.reload();
       }
       if (data === 'registred') {
         this._close();
         this.popupOpen('popup_massage');
-      } else { this.getformInstance().setServerError(data.message); }
+      }
     });
     // .catch((err) => this.getformInstance().setServerError(err.message));
   }

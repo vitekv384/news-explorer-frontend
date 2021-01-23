@@ -14,7 +14,7 @@ export default {
           <span class="popup__error popup__error_password"></span>
           <button type="submit" name="button" class="button button_theme_blue popup__button"
             disabled="disabled" data-action-button="signin">Войти</button>
-          <p class="popup__footer">или <a href="#" class="link popup__footer_link signup" data-popup="popup_signup">Зарегистрироваться</a></p>
+          <p class="popup__footer">или <a href="#" class="link popup__footer_link" data-popup="popup_signup">Зарегистрироваться</a></p>
         </form>
       </div>
     `,
@@ -44,7 +44,7 @@ export default {
       <div class="popup__content">
         <img src="../images/close.svg" alt="" class="popup__close close">
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
-        <a href="#" class="link popup__massage-link" data-popup="popup_signin">Войти</a>
+        <a href="#" class="link popup__massage_link popup__footer_link" data-popup="popup_signin">Войти</a>
       </div>
     `,
   },
