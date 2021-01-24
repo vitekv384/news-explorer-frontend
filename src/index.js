@@ -8,6 +8,7 @@ import MainApi from './js/api/MainApi';
 const formValidator = (form) => new Form(form);
 const config = {
   baseUrl: 'https://api.news-app.tk',
+  isAuth: !!localStorage.getItem('token'),
 };
 
 const mainApi = new MainApi(config);

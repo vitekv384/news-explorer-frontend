@@ -3,13 +3,9 @@ import BaseComponent from './BaseComponent';
 export default class Header extends BaseComponent {
   constructor(data) {
     super();
-    ({
-      popupTemplate: this.popupTemplate,
-      popupOpen: this.popupOpen,
-      formValidator: this.formValidator,
-      mainApi: this.api,
-    } = data);
     this.root = document.querySelector('.root');
+    this.header = root.querySelector('.header');
+    this.sevedArtclesLink = header.querySelector('.nav__item_type_hiden');
   }
 
   render(props) {
@@ -20,9 +16,9 @@ export default class Header extends BaseComponent {
     this.header.style.background = this.background;
     this.header.style.boxShadow = this.boxShadow;
     this.savedArticlesButton.classList.add(`${this.headerBtnHiddenClass}`);
-    if (!this.isLoggedIn && this.popupOpenBtnListener) {
-      this.popupOpenBtnListener(this.loginButton);
-    }
+    // if (!this.isLoggedIn && this.popupOpenBtnListener) {
+    //   this.popupOpenBtnListener(this.loginButton);
+    // }
     if (this.isLoggedIn) {
       this.savedArticlesButton.classList.remove(`${this.headerBtnHiddenClass}`);
       this.loginButton.textContent = `${this.userName}`;
